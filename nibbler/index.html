@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@-webkit-keyframes iris {
+		    0%   {margin: 11px 0 0 35px;}
+		    25%  {margin: 40px 0 0 30px;}
+		    50%  {margin: 10px 0 0 20px;}
+		    75%  {margin: 25px 0 0 10px;}
+		    100% {margin: 11px 0 0 35px;}
+		}
+		@-moz-keyframes iris {
+		    0%   {margin: 11px 0 0 35px;}
+		    25%  {margin: 40px 0 0 30px;}
+		    50%  {margin: 10px 0 0 20px;}
+		    75%  {margin: 25px 0 0 10px;}
+		    100% {margin: 11px 0 0 35px;}
+		}
+		@-ms-keyframes iris {
+		    0%   {margin: 11px 0 0 35px;}
+		    25%  {margin: 40px 0 0 30px;}
+		    50%  {margin: 10px 0 0 20px;}
+		    75%  {margin: 25px 0 0 10px;}
+		    100% {margin: 11px 0 0 35px;}
+		}
+		@-o-keyframes iris {
+		    0%   {margin: 11px 0 0 35px;}
+		    25%  {margin: 40px 0 0 30px;}
+		    50%  {margin: 10px 0 0 20px;}
+		    75%  {margin: 25px 0 0 10px;}
+		    100% {margin: 11px 0 0 35px;}
+		}
+		@keyframes iris {
+		    0%   {margin: 11px 0 0 35px;}
+		    25%  {margin: 40px 0 0 30px;}
+		    50%  {margin: 10px 0 0 20px;}
+		    75%  {margin: 25px 0 0 10px;}
+		    100% {margin: 11px 0 0 35px;}
+		}
+
+		.tudo{
+			width: 377px;
+			height: 417px;
+			top: 50%;
+			left: 50%;
+			position: absolute;
+			z-index: 1;
+			margin-top: -208px;
+			margin-left: -188px;
+		}
+		.eye-up{
+			width: 70px;
+			height: 67px;
+			position: absolute;
+			z-index: 3;
+			margin-left: 133px;
+			background-color: #FFF;
+			border:2px solid #000;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			-ms-border-radius: 50px;
+			-o-border-radius: 50px;
+			border-radius: 50px;
+		}
+		.iris-up{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			z-index: 4;
+			background-color: #000;
+			-webkit-border-radius: 50px;
+			-moz-border-radius: 50px;
+			-ms-border-radius: 50px;
+			-o-border-radius: 50px;
+			border-radius: 50px;
+			margin: 11px 0 0 35px;
+			-webkit-animation:iris 8s 4s infinite;
+			-moz-animation:iris 8s 4s infinite;
+			-ms-animation:iris 8s 4s infinite;
+			-o-animation:iris 8s 4s infinite;
+			animation:iris 8s 4s infinite;
+		}
+		.bar-up{
+			width: 22px;
+			height: 68px;
+			position: absolute;
+			z-index: 2px;
+			background-color: #000;
+			margin: 62px 0 0 163px;
+		}
+		.header{
+			width: 302px;
+			height: 216px;
+			position: absolute;
+			z-index: 3px;
+			-webkit-border-radius: 45%;
+			-moz-border-radius: 45%;
+			-ms-border-radius: 45%;
+			-o-border-radius: 45%;
+			border-radius: 45%;
+			background-color: #000;
+			margin: 154px 0 0 32px;
+		}
+		.head-detail{
+			width: 95px;
+			height: 80px;
+			position: absolute;
+			z-index: 2px;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			background-color: #000;
+			margin: 128px 0 0 125px;
+		}
+		.left-eyebrow{
+			width: 76px;
+			height: 45px;
+			position: absolute;
+			z-index: 4px;
+			background-color: #000;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			margin: 34px 0 0 0;
+		}
+		.left-eye{
+			width: 123px;
+			height: 113px;
+			position: absolute;
+			z-index: 4;
+			margin: 58px 0 0 -20px;
+			background-color: #FFF;
+			border:2px solid #000;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+		}
+		.left-iris{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			z-index: 5;
+			background-color: #000;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			margin: 23px 0 0 81px;
+		}
+		.right-eyebrow{
+			width: 76px;
+			height: 45px;
+			position: absolute;
+			z-index: 4px;
+			background-color: #000;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			margin: 34px 0 0 228px;
+		}
+		.right-eye{
+			width: 123px;
+			height: 113px;
+			position: absolute;
+			z-index: 4;
+			margin: 58px 0 0 200px;
+			background-color: #FFF;
+			border:2px solid #000;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+		}
+		.right-iris{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			z-index: 5;
+			background-color: #000;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			margin: 23px 0 0 81px;
+		}
+		.mouth{
+			width: 205px;
+			height: 80px;
+			position: absolute;
+			z-index: 4;
+			background-color: #fcf7e0;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			border:2px solid #000;
+			margin: 155px 0 0 50px;
+		}
+		.mouth-detail{
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			z-index: 6;
+			background-color: #000;
+			margin: 43px 0 0 25px;
+		}
+		.mouth-up{
+			width: 120px;
+			height: 39px;
+			position: absolute;
+			z-index: 4;
+			transform: rotate(10deg);
+			background-color: #000;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			margin: 5px 0 0 98px;
+		}
+		.mouth-up-detail{
+			width: 120px;
+			height: 40px;
+			position: absolute;
+			z-index: 5;
+			transform: rotate(10deg);
+			background-color: #fcf7e0;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			margin: 5px 0 0 95px;
+		}
+		.left-bottom-tooth{
+			position: absolute;
+			z-index: 5px;
+			margin: 45px 0 0 47px;
+			border-left: 18px solid transparent;
+			border-right: 18px solid transparent;
+			border-top: 42px solid #000;
+		}
+		.left-tooth{
+			position: absolute;
+			z-index: 6px;
+			margin: 45px 0 0 50px;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-top: 40px solid #FFF;
+		}
+		.right-bottom-tooth{
+			position: absolute;
+			z-index: 6;
+			margin: 45px 0 0 152px;
+			border-left: 18px solid transparent;
+			border-right: 18px solid transparent;
+			border-top: 42px solid #000;
+		}
+		.right-tooth{
+			position: absolute;
+			z-index: 6;
+			margin: 45px 0 0 155px;
+			border-left: 15px solid transparent;
+			border-right: 15px solid transparent;
+			border-top: 40px solid #FFF;
+		}
+		.nose{
+			width: 90px;
+			height: 38px;
+			position: absolute;
+			z-index: 6;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			background-color: #fcf9e1;
+			border:2px solid #000;
+			margin: -25px 0 0 55px;
+		}
+		.internal-nose{
+			width: 50px;
+			height: 21px;
+			position: absolute;
+			z-index: 7;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			border-radius: 50%;
+			background-color: #000;
+			margin: 10px 0 0 20px;
+		}
+		.nose-detail{
+			width: 40px;
+			height: 10px;
+			position: absolute;
+			z-index: 8;
+			background-color: #fcf9e1;
+			margin: 35px 0 0 30px;
+		}
+		
+	</style>
+</head>
+<body>
+	
+	<!--TUDO-->
+	<div class="tudo">
+		
+		<!--EYE UP-->
+		<div class="eye-up">
+			
+			<!--IRIS UP-->
+			<div class="iris-up"></div>
+
+		</div>
+
+			<!--BAR UP-->
+			<div class="bar-up"></div>
+
+				<!--HEADER DETAIL-->
+				<div class="head-detail"></div>
+				<!--HEADER-->
+				<div class="header">
+
+					<!--LEFT EVEBROW-->
+					<div class="left-eyebrow"></div>
+
+						<!--LEFT EYE-->
+						<div class="left-eye">
+
+							<!--LEFT IRIS-->
+							<div class="left-iris"></div>
+							
+						</div>
+
+					<!--RIGHT EYEBROW-->
+					<div class="right-eyebrow"></div>
+
+						<!--RIGHT EYE-->
+						<div class="right-eye">
+
+							<!--RIGHT IRIS-->
+							<div class="right-iris"></div>
+							
+						</div>
+
+							<!--MOUTH-->
+							<div class="mouth">
+
+								<!--NOSE-->
+								<div class="nose">
+
+									<!--INTERNAL NOSE-->
+									<div class="internal-nose"></div>
+
+										<!--NOSE DETAIL-->
+										<div class="nose-detail"></div>
+									
+								</div>
+
+									<!--MOUTH DETAIL-->
+									<div class="mouth-detail"></div>
+									<!--MOUTH UP-->
+									<div class="mouth-up"></div>
+									<!--MOUTH UP DETAIL-->
+									<div class="mouth-up-detail"></div>
+
+										<!--LEFT BOTTOM TOOTH-->
+										<div class="left-bottom-tooth"></div>
+
+										<!--LEFT TOOTH-->
+										<div class="left-tooth"></div>
+
+											<!--RIGHT BOTTOM TOOTH-->
+											<div class="right-bottom-tooth"></div>
+
+											<!--RIGHT TOOTH-->
+											<div class="right-tooth"></div>
+								
+							</div>
+					
+				</div>
+		
+
+	</div>
+
+</body>
+</html>
