@@ -1,0 +1,660 @@
+body{
+	background: #fff url(http://tympanus.net/Tutorials/CSS3RotatingWords/images/lghtmesh.png) repeat center center;
+	overflow-x: hidden;
+}
+
+/*
+Nosa animação será executada em ciclo, cada espaço vai ser mostrado uma vez por 3 segundos, dai aonde o entra o valor de atraso.
+Executando 6 (Número de frases) * 3 (tempo de aparição) = 18 segundos.
+Temos que definir a porcentagem certa para o valor opacidade (ou o que faz com que o espaço apreça)
+Divimos 6 por 19 = 0.333... o que seria 33% para o nosso passo.
+Tudo o que quer que aconteça com a extensão precisa acontecer antes disso.
+Assim depois de ajustes e ver o que encaixa melhor, nos deparamos com a seguinte animação para as primeiras palavras:
+*/
+@-webkit-keyframes rotateWordsFirst{
+	0%{ opacity: 0;
+		-webkit-animation-timing-function: ease-in;
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; height: 0px;}
+	8%{ opacity: 1; height: 60px;}
+	19%{ opacity: 1; height: 60px;}
+	25%{ opacity: 0; height: 60px;}
+	100%{ opacity: 0;}
+}
+@-moz-keyframes rotateWordsFirst{
+	0%{ opacity: 0; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; height: 0px;}
+	8%{ opacity: 1; height: 60px;}
+	19%{ opacity: 1; height: 60px;}
+	25%{ opacity: 0; height: 60px;}
+	100%{ opacity: 0;}
+}
+@-ms-keyframes rotateWordsFirst{
+	0%{ opacity: 0; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; height: 0px;}
+	8%{ opacity: 1; height: 60px;}
+	19%{ opacity: 1; height: 60px;}
+	25%{ opacity: 0; height: 60px;}
+	100%{ opacity: 0;}
+}
+@-o-keyframes rotateWordsFirst{
+	0%{ opacity: 0; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; height: 0px;}
+	8%{ opacity: 1; height: 60px;}
+	19%{ opacity: 1; height: 60px;}
+	25%{ opacity: 0; height: 60px;}
+	100%{ opacity: 0;}
+}
+@keyframes rotateWordsFirst{
+	0%{ opacity: 0; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; height: 0px;}
+	8%{ opacity: 1; height: 60px;}
+	19%{ opacity: 1; height: 60px;}
+	25%{ opacity: 0; height: 60px;}
+	100%{ opacity: 0;}
+}
+/*
+Vai desaparecer no espço e também vai animar a sua altura.
+A animação das palavras da segunda div vai ser fade in e animar sua largura.
+Adicionamos um pouco de porcentagem nas etapas, porquer queremos que as palavras apareçam apenas um poucquinho
+mais tarde do que os da primeira:
+*/
+@-webkit-keyframes rotateWordsSecond{
+	0% { opacity: 1; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; width: 0px;}
+	10% { opacity: 0.3; width: 0px;}
+	20% { opacity: 1; width: 100%; }
+	27% { opacity: 0; width: 100%;}
+	100% { opacity: 0;}
+}
+@-moz-keyframes rotateWordsSecond{
+	0% { opacity: 1; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; width: 0px;}
+	10% { opacity: 0.3; width: 0px;}
+	20% { opacity: 1; width: 100%; }
+	27% { opacity: 0; width: 100%;}
+	100% { opacity: 0;}
+}
+@-ms-keyframes rotateWordsSecond{
+	0% { opacity: 1; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; width: 0px;}
+	10% { opacity: 0.3; width: 0px;}
+	20% { opacity: 1; width: 100%; }
+	27% { opacity: 0; width: 100%;}
+	100% { opacity: 0;}
+}
+@-o-keyframes rotateWordsSecond{
+	0% { opacity: 1; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; width: 0px;}
+	10% { opacity: 0.3; width: 0px;}
+	20% { opacity: 1; width: 100%; }
+	27% { opacity: 0; width: 100%;}
+	100% { opacity: 0;}
+}
+@keyframes rotateWordsSecond{
+	0% { opacity: 1; 
+		-webkit-animation-timing-function: ease-in; 
+		-moz-animation-timing-function: ease-in;
+		-ms-animation-timing-function: ease-in;
+		-o-animation-timing-function: ease-in;
+		animation-timing-function: ease-in; width: 0px;}
+	10% { opacity: 0.3; width: 0px;}
+	20% { opacity: 1; width: 100%; }
+	27% { opacity: 0; width: 100%;}
+	100% { opacity: 0;}
+}
+/*3 ANIMAÇÃO*/
+@-webkit-keyframes rotateWord{
+	0% { opacity: 0; }
+    2% { opacity: 0; 
+    	-webkit-transform: translateY(-30px); 
+    	-moz-transform: translateY(-30px);
+    	-ms-transform: translateY(-30px);
+    	-o-transform: translateY(-30px);
+    	transform: translateY(-30px); 
+    }
+	5% { opacity: 1; 
+		-webkit-transform: translateY(0px);  
+		-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px); 
+		transform: translateY(0px);
+	}
+    17% { opacity: 1; 
+    	-webkit-transform: translateY(0px);
+    	-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px);
+    	transform: translateY(0px); 
+    }
+	20% { opacity: 0; 
+		-webkit-transform: translateY(30px); 
+		-moz-transform: translateY(30px); 
+		-ms-transform: translateY(30px); 
+		-o-transform: translateY(30px); 
+		transform: translateY(30px); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes rotateWord{
+	0% { opacity: 0; }
+    2% { opacity: 0; 
+    	-webkit-transform: translateY(-30px); 
+    	-moz-transform: translateY(-30px);
+    	-ms-transform: translateY(-30px);
+    	-o-transform: translateY(-30px);
+    	transform: translateY(-30px); 
+    }
+	5% { opacity: 1; 
+		-webkit-transform: translateY(0px);  
+		-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px); 
+		transform: translateY(0px);
+	}
+    17% { opacity: 1; 
+    	-webkit-transform: translateY(0px);
+    	-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px);
+    	transform: translateY(0px); 
+    }
+	20% { opacity: 0; 
+		-webkit-transform: translateY(30px); 
+		-moz-transform: translateY(30px); 
+		-ms-transform: translateY(30px); 
+		-o-transform: translateY(30px); 
+		transform: translateY(30px); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWord{
+	0% { opacity: 0; }
+    2% { opacity: 0; 
+    	-webkit-transform: translateY(-30px); 
+    	-moz-transform: translateY(-30px);
+    	-ms-transform: translateY(-30px);
+    	-o-transform: translateY(-30px);
+    	transform: translateY(-30px); 
+    }
+	5% { opacity: 1; 
+		-webkit-transform: translateY(0px);  
+		-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px); 
+		transform: translateY(0px);
+	}
+    17% { opacity: 1; 
+    	-webkit-transform: translateY(0px);
+    	-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px);
+    	transform: translateY(0px); 
+    }
+	20% { opacity: 0; 
+		-webkit-transform: translateY(30px); 
+		-moz-transform: translateY(30px); 
+		-ms-transform: translateY(30px); 
+		-o-transform: translateY(30px); 
+		transform: translateY(30px); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-o-keyframes rotateWord{
+	0% { opacity: 0; }
+    2% { opacity: 0; 
+    	-webkit-transform: translateY(-30px); 
+    	-moz-transform: translateY(-30px);
+    	-ms-transform: translateY(-30px);
+    	-o-transform: translateY(-30px);
+    	transform: translateY(-30px); 
+    }
+	5% { opacity: 1; 
+		-webkit-transform: translateY(0px);  
+		-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px); 
+		transform: translateY(0px);
+	}
+    17% { opacity: 1; 
+    	-webkit-transform: translateY(0px);
+    	-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px);
+    	transform: translateY(0px); 
+    }
+	20% { opacity: 0; 
+		-webkit-transform: translateY(30px); 
+		-moz-transform: translateY(30px); 
+		-ms-transform: translateY(30px); 
+		-o-transform: translateY(30px); 
+		transform: translateY(30px); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWord{
+	0% { opacity: 0; }
+    2% { opacity: 0; 
+    	-webkit-transform: translateY(-30px); 
+    	-moz-transform: translateY(-30px);
+    	-ms-transform: translateY(-30px);
+    	-o-transform: translateY(-30px);
+    	transform: translateY(-30px); 
+    }
+	5% { opacity: 1; 
+		-webkit-transform: translateY(0px);  
+		-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px); 
+		transform: translateY(0px);
+	}
+    17% { opacity: 1; 
+    	-webkit-transform: translateY(0px);
+    	-moz-transform: translateY(0px); 
+		-ms-transform: translateY(0px); 
+		-o-transform: translateY(0px);
+    	transform: translateY(0px); 
+    }
+	20% { opacity: 0; 
+		-webkit-transform: translateY(30px); 
+		-moz-transform: translateY(30px); 
+		-ms-transform: translateY(30px); 
+		-o-transform: translateY(30px); 
+		transform: translateY(30px); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+/*4 ANIMAÇÃO*/
+@-webkit-keyframes rotateWordRoom{
+	 0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; 
+    	-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg); 
+    }
+	19% { opacity: 1; 
+		-webkit-transform: rotate(98deg);
+		-moz-transform: rotate(98deg); 
+		-ms-transform: rotate(98deg); 
+		-o-transform: rotate(98deg); 
+		transform: rotate(98deg); 
+	}
+	21% { opacity: 1; 
+		-webkit-transform: rotate(86deg);
+		-moz-transform: rotate(86deg); 
+		-ms-transform: rotate(86deg); 
+		-o-transform: rotate(86deg); 
+		transform: rotate(86deg); 
+	}
+	23% { opacity: 1; 
+		-webkit-transform: translateY(85px) rotate(83deg);
+		-moz-transform: translateY(85px) rotate(83deg);
+		-ms-transform: translateY(85px) rotate(83deg);
+		-o-transform: translateY(85px) rotate(83deg);
+		transform: translateY(85px) rotate(83deg); 
+	}
+	25% { opacity: 0; 
+		-webkit-transform: translateY(170px) rotate(80deg); 
+		-moz-transform: translateY(170px) rotate(80deg); 
+		-ms-transform: translateY(170px) rotate(80deg); 
+		-o-transform: translateY(170px) rotate(80deg); 
+		transform: translateY(170px) rotate(80deg); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-moz-keyframes rotateWordRoom{
+	 0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; 
+    	-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg); 
+    }
+	19% { opacity: 1; 
+		-webkit-transform: rotate(98deg);
+		-moz-transform: rotate(98deg); 
+		-ms-transform: rotate(98deg); 
+		-o-transform: rotate(98deg); 
+		transform: rotate(98deg); 
+	}
+	21% { opacity: 1; 
+		-webkit-transform: rotate(86deg);
+		-moz-transform: rotate(86deg); 
+		-ms-transform: rotate(86deg); 
+		-o-transform: rotate(86deg); 
+		transform: rotate(86deg); 
+	}
+	23% { opacity: 1; 
+		-webkit-transform: translateY(85px) rotate(83deg);
+		-moz-transform: translateY(85px) rotate(83deg);
+		-ms-transform: translateY(85px) rotate(83deg);
+		-o-transform: translateY(85px) rotate(83deg);
+		transform: translateY(85px) rotate(83deg); 
+	}
+	25% { opacity: 0; 
+		-webkit-transform: translateY(170px) rotate(80deg); 
+		-moz-transform: translateY(170px) rotate(80deg); 
+		-ms-transform: translateY(170px) rotate(80deg); 
+		-o-transform: translateY(170px) rotate(80deg); 
+		transform: translateY(170px) rotate(80deg); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-ms-keyframes rotateWordRoom{
+	 0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; 
+    	-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg); 
+    }
+	19% { opacity: 1; 
+		-webkit-transform: rotate(98deg);
+		-moz-transform: rotate(98deg); 
+		-ms-transform: rotate(98deg); 
+		-o-transform: rotate(98deg); 
+		transform: rotate(98deg); 
+	}
+	21% { opacity: 1; 
+		-webkit-transform: rotate(86deg);
+		-moz-transform: rotate(86deg); 
+		-ms-transform: rotate(86deg); 
+		-o-transform: rotate(86deg); 
+		transform: rotate(86deg); 
+	}
+	23% { opacity: 1; 
+		-webkit-transform: translateY(85px) rotate(83deg);
+		-moz-transform: translateY(85px) rotate(83deg);
+		-ms-transform: translateY(85px) rotate(83deg);
+		-o-transform: translateY(85px) rotate(83deg);
+		transform: translateY(85px) rotate(83deg); 
+	}
+	25% { opacity: 0; 
+		-webkit-transform: translateY(170px) rotate(80deg); 
+		-moz-transform: translateY(170px) rotate(80deg); 
+		-ms-transform: translateY(170px) rotate(80deg); 
+		-o-transform: translateY(170px) rotate(80deg); 
+		transform: translateY(170px) rotate(80deg); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@-o-keyframes rotateWordRoom{
+	 0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; 
+    	-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg); 
+    }
+	19% { opacity: 1; 
+		-webkit-transform: rotate(98deg);
+		-moz-transform: rotate(98deg); 
+		-ms-transform: rotate(98deg); 
+		-o-transform: rotate(98deg); 
+		transform: rotate(98deg); 
+	}
+	21% { opacity: 1; 
+		-webkit-transform: rotate(86deg);
+		-moz-transform: rotate(86deg); 
+		-ms-transform: rotate(86deg); 
+		-o-transform: rotate(86deg); 
+		transform: rotate(86deg); 
+	}
+	23% { opacity: 1; 
+		-webkit-transform: translateY(85px) rotate(83deg);
+		-moz-transform: translateY(85px) rotate(83deg);
+		-ms-transform: translateY(85px) rotate(83deg);
+		-o-transform: translateY(85px) rotate(83deg);
+		transform: translateY(85px) rotate(83deg); 
+	}
+	25% { opacity: 0; 
+		-webkit-transform: translateY(170px) rotate(80deg); 
+		-moz-transform: translateY(170px) rotate(80deg); 
+		-ms-transform: translateY(170px) rotate(80deg); 
+		-o-transform: translateY(170px) rotate(80deg); 
+		transform: translateY(170px) rotate(80deg); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+@keyframes rotateWordRoom{
+	 0% { opacity: 0; }
+    5% { opacity: 1; }
+    17% { opacity: 1; 
+    	-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+    	transform: rotate(0deg); 
+    }
+	19% { opacity: 1; 
+		-webkit-transform: rotate(98deg);
+		-moz-transform: rotate(98deg); 
+		-ms-transform: rotate(98deg); 
+		-o-transform: rotate(98deg); 
+		transform: rotate(98deg); 
+	}
+	21% { opacity: 1; 
+		-webkit-transform: rotate(86deg);
+		-moz-transform: rotate(86deg); 
+		-ms-transform: rotate(86deg); 
+		-o-transform: rotate(86deg); 
+		transform: rotate(86deg); 
+	}
+	23% { opacity: 1; 
+		-webkit-transform: translateY(85px) rotate(83deg);
+		-moz-transform: translateY(85px) rotate(83deg);
+		-ms-transform: translateY(85px) rotate(83deg);
+		-o-transform: translateY(85px) rotate(83deg);
+		transform: translateY(85px) rotate(83deg); 
+	}
+	25% { opacity: 0; 
+		-webkit-transform: translateY(170px) rotate(80deg); 
+		-moz-transform: translateY(170px) rotate(80deg); 
+		-ms-transform: translateY(170px) rotate(80deg); 
+		-o-transform: translateY(170px) rotate(80deg); 
+		transform: translateY(170px) rotate(80deg); 
+	}
+	80% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+/*Centralizando o wrapper principal da pagina*/
+.rw-wrapper{
+	width: 80%;
+	position: relative;
+	margin: 55px auto 55px auto;
+	font-family: Arial;
+	padding: 10px;
+}
+.rw-wrapper-two{
+	width: 80%;
+	position: relative;
+	margin: 55px auto 55px auto;
+	font-family: Arial;
+	padding: 10px;
+}
+.rw-wrapper-treis{
+	width: 80%;
+	position: relative;
+	margin: 55px auto 55px auto;
+	font-family: Arial;
+	padding: 10px;
+}
+/*Adicionando um pouco de sombra para todos os elementos do titulo*/
+.rw-sentence{
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+/*Adicionando estilo em texto específico*/
+.rw-sentence span{
+	color: #444;
+	white-space nowrap;
+	font-size: 200%;
+	font-weight: normal;
+}
+/*As divisões serão exibida como elementos inline, que nos permitirá "inserir-los" para a sentença sem quabrar o fluxo:*/
+.rw-words{
+	display: inline;
+	text-indent: 10px;
+}
+/*Cada espaço dentro de uma div RW-WORDS serão posicionados absolutamente e vamos esconder qualquer overflow:*/
+.rw-words span{
+	position: absolute;
+	opacity: 0;
+	overflow: hidden;
+	width: 100%;
+	color: #6b969d;
+}
+/*Agpra, vamos correr duas animações. Como mencionado anteriormente, vamos executar a mesma animação para todas as extensões em uma div como diferentes atrasos:*/
+.rw-words-1 span{
+	-webkit-animation: rotateWordsFirst 18s linear infinite 0s;
+	-moz-animation: rotateWordsFirst 18s linear infinite 0s;
+	-ms-animation: rotateWordsFirst 18s linear infinite 0s;
+	-o-animation: rotateWordsFirst 18s linear infinite 0s;
+	animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.rw-words-2 span{
+	-webkit-animation: rotateWordsSecond 18s linear infinite 0s;
+	-moz-animation: rotateWordsSecond 18s linear infinite 0s;
+	-ms-animation: rotateWordsSecond 18s linear infinite 0s;
+	-o-animation: rotateWordsSecond 18s linear infinite 0s;
+	animation: rotateWordsSecond 18s linear infinite 0s;
+}
+.rw-words-3 span{
+	-webkit-animation: rotateWord 18s linear infinite 0s;
+	-moz-animation: rotateWord 18s linear infinite 0s;
+	-ms-animation: rotateWord 18s linear infinite 0s;
+	-o-animation: rotateWord 18s linear infinite 0s;
+	animation: rotateWord 18s linear inifinite 0s;
+}
+.rw-words-4 span{
+	transform-origin: 2% 75%;
+	-webkit-animation: rotateWordRoom 18s linear infinite 0s;
+	-moz-animation: rotateWordRoom 18s linear infinite 0s;
+	-ms-animation: rotateWordRoom 18s linear infinite 0s;
+	-o-animation: rotateWordRoom 18s linear infinite 0s;
+	animation: rotateWordRoom 18s linear infinite 0s;
+}
+.rw-words span:nth-child(2){
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	animation-delay: 3s;
+	color: #6b739d;
+}
+.rw-words span:nth-child(3){
+	-webkit-animation-delay: 6s;
+	-moz-animation-delay: 6s;
+	-ms-animation-delay: 6s;
+	-o-animation-delay: 6s;
+	animation-delay: 6s;
+	color: #6b739d;
+}
+.rw-words span:nth-child(4){
+	-webkit-animation-delay: 9s;
+	-moz-animation-delay: 9s;
+	-ms-animation-delay: 9s;
+	-o-animation-delay: 9s;
+	animation-delay: 9s;
+	color: #7a6b9d;
+}
+.rw-words span:nth-child(5){
+	-webkit-animation-delay: 12s;
+	-moz-animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	-o-animation-delay: 12s;
+	animation-delay: 12s;
+	color: : #8d6b9d;
+}
+.rw-words span:nth-child(6){
+	-webkit-animation-delay: 15s;
+	-moz-animation-delay: 15s;
+	-ms-animation-delay: 15s;
+	-o-animation-delay: 15s;
+	animation-delay: 15s;
+	color: #9b6b9d;
+}
+.information{
+	width: auto;
+	height: 30px;
+	top: 5px;
+	left: 5px;
+	position: fixed;
+	z-index: 3;
+	background-color: #FFF;
+	padding-right: 5px;
+	opacity: 0.8;
+}
+.information p{
+	width: auto;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	font-family: Arial;
+	font-size: 0.9em;
+	color: #000;
+	font-weight: bold;
+	margin: 0px 0px 0px 5px;
+}
+.information p a{
+	font-size: 0.9em;
+	color: #5EAFC8;
+}
+.information p a:hover{
+	font-size: 0.9em;
+	color: #000;
+}
