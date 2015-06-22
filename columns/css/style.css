@@ -1,0 +1,33 @@
+.columns{
+	width: 800px;
+	height: auto;
+	margin: 0 auto;
+	padding: 10px;
+	/*DEFININDO A QUANTIDADE DE COLUNAS*/
+	-webkit-columns: 3; /*Chrome e Safari*/
+	-moz-columns: 3; /*Firefox*/
+	-ms-columns: 3; /*Internet Explorer*/
+	o-columns: 3; /*Opera*/
+	columns: 3;
+	/*DEFININDO UM ESPAÇO ENTRE AS COLUNAS*/
+	-webkit-column-gap: 20px;/*Chrome e Safari*/
+	-moz-column-gap: 20px;/*Firefox*/
+	-ms-column-gap: 20px;/*Internet Explorer*/
+	-o-column-gap: 20px;/*Opera*/
+	column-gap: 20px;
+	/*DEFININDO UM BORDA ENTRE AS COLUNAS 1PX É A LARGUNDA, SOLID O ESTILO E LIGHTBLUE A COR*/
+	-webkit-column-rule: 1px solid lightblue;/*Chrome e Safari*/
+	-moz-column-rule: 1px solid lightblue;/*Firefox*/
+	-ms-column-rule: 1px solid lightblue;/*Internet Explorer*/
+	-o-column-rule: 1px solid lightblue;/*Opera*/
+	column-rule: 1px solid lightblue;
+}
+h2{
+	/*FAZENDO O TITULO FICA DE FORA A FORA DA COLUNA*/
+	/*LEMBRANDO QUE ESSA PROPRIEDADE NÃO FUNCIONA NO FIREFOX*/
+	-webkit-column-span: all;/*Chrome e Safari*/
+	-moz-column-span: all;/*Firefox*/
+	-ms-column-span: all;/*Internet Explorer*/
+	-o-column-span: all;/*Opera*/
+	column-span: all;
+}
