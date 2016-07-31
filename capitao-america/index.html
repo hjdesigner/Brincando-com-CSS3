@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Capitao America CSS</title>
+  <style>
+    .escudo{
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      top: 50%;
+      margin: -150px 0 0 -150px;
+      border: 1px solid #3f3431;
+      border-radius: 50%;
+      background: -webkit-linear-gradient(top,  rgba(145,9,1,1) 0%,rgba(236,23,1,1) 24%,rgba(255,167,168,1) 50%,rgba(236,23,1,1) 76%,rgba(145,9,1,1) 100%);
+      box-shadow: -1px 6px 27px #999;
+    }
+    .escudo:before{
+      content: "";
+      width: 240px;
+      height: 240px;
+      position: absolute;
+      z-index: 2;
+      left: 30px;
+      top: 30px;
+      border-radius: 50%;
+      background: -webkit-linear-gradient(top, rgba(227,229,221,1) 0%,rgba(244,246,238,1) 24%,rgba(255,255,255,1) 50%,rgba(244,246,238,1) 77%,rgba(227,229,221,1) 100%);
+      border: 1px solid #9d2923;
+    }
+    .escudo:after{
+      content: "";
+      width: 180px;
+      height: 180px;
+      position: absolute;
+      z-index: 3;
+      left: 60px;
+      top: 60px;
+      border-radius: 50%;
+      background: -webkit-linear-gradient(top,  rgba(145,9,1,1) 0%,rgba(236,23,1,1) 24%,rgba(254,127,126,1) 50%,rgba(236,23,1,1) 76%,rgba(145,9,1,1) 100%);
+      border: 1px solid #933535;
+    }
+    .estrela{
+      width: 134px;
+      height: 134px;
+      position: absolute;
+      z-index: 4;
+      top: 82px;
+      left: 83px;
+      border: 2px solid #2e303e;
+      border-radius: 50%;
+      background: -webkit-linear-gradient(top, rgba(2,0,29,1) 0%,rgba(38,128,195,1) 35%,rgba(98,184,240,1) 50%,rgba(38,128,195,1) 65%,rgba(2,0,29,1) 100%);
+    }
+    .estrela-diagrama,
+    .estrela-diagrama:before,
+    .estrela-diagrama:after{
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      border-right: 58px solid transparent;
+      border-left: 58px solid transparent;
+      border-bottom: 42px solid #FFF;
+    }
+    .estrela-diagrama{
+      z-index: 5;
+      transform: rotate(-180deg);
+      left: 8px;
+      top: 47px;
+    }
+    .estrela-diagrama:before {
+      content: "";
+      z-index: 6;
+      transform: rotate(-72deg);
+      left: -59px;
+      top: 1px;
+    }
+    .estrela-diagrama:after {
+      content: "";
+      z-index: 6;
+      transform: rotate(71deg);
+      left: -56px;
+      top: 1px;
+    }
+    .estrela-sombra,
+    .estrela-sombra:before,
+    .estrela-sombra:after{
+      width: 0px;
+      height: 0px;
+      position: absolute;
+    }
+    .estrela-sombra{
+      z-index: 5;
+      border-right: 64px solid transparent;
+      border-left: 64px solid transparent;
+      border-bottom: 47px solid #2e303e;
+      transform: rotate(-180deg);
+      left: 2px;
+      top: 45px;
+    }
+    .estrela-sombra:before,
+    .estrela-sombra:after{
+      border-right: 65px solid transparent;
+      border-left: 65px solid transparent;
+      border-bottom: 48px solid #2e303e;
+      z-index: 6;
+      top: 1px;
+    }
+    .estrela-sombra:before {
+      content: "";
+      transform: rotate(-72deg);
+      left: -67px;
+    }
+    .estrela-sombra:after {
+      content: "";
+      transform: rotate(71deg);
+      left: -62px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="escudo">
+    <div class="estrela">
+      <div class="estrela-sombra"></div>
+      <div class="estrela-diagrama"></div>
+    </div>
+  </div>
+</body>
+</html>
