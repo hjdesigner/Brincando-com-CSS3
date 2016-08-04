@@ -9,3 +9,6 @@ Lista:
 * Criando formas somente com CSS
 * Alterando a cor do fundo do site somente com CSS
 * Logo Github somente com CSS3
+* Logo Instagram
+* Escudo Capitão America Puro CSS
+* Text Filter Background Pure CSS
