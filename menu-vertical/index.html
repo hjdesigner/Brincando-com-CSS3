@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Menu Vertical CSS</title>
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+  @import url(http://weloveiconfonts.com/api/?family=entypo|typicons);
+  /* typicons */
+  [class*="typicons-"]:before {
+    font-family: 'Typicons', sans-serif;
+  }
+  *, ul{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    width: 100%;
+    height: 100%;
+  }
+  body{
+    width: 100%;
+    height: 100%;
+    background-color: deepPink;
+  }
+  nav{
+    width: 80px;
+    height: 100%;
+    float: left;
+    background-color: #0e0f12;
+  }
+  ul{
+    width: 100%;
+    height: auto;
+    float: left;
+    list-style: none;
+  }
+  li, i{
+    width: 80px;
+    height: 50px;
+    float: left;
+    cursor: pointer;
+    transition: all .10s ease;
+  }
+  li{
+    position: relative;
+    margin-top: 30px;
+  }
+  li:hover{
+    background-color: #b40e68;
+  }
+  li:hover i{
+    color: #FFF;
+  }
+  i{
+    line-height: 60px;
+    text-align: center;
+    color: #878789;
+    font-size: 50px;
+    font-style: normal;
+  }
+  .nav-texto{
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: -190px;
+    top: 0px;
+    background-color: #b40e68;
+    line-height: 50px;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+    font-size: 1.5em;
+    padding-right: 30px;
+    transition: all .5s ease;
+  }
+  li:hover .nav-texto{
+    left: 80px;
+  }
+  </style>
+</head>
+<body>
+<nav>
+  <ul>
+    <li><i class="typicons-home"></i><div class="nav-texto">Principal</div></li>
+    <li><i class="typicons-group"></i><div class="nav-texto">Usuários</div></li>
+    <li><i class="typicons-camera"></i><div class="nav-texto">Galeria</div></li>
+    <li><i class="typicons-lineChart"></i><div class="nav-texto">Gráficos</div></li>
+    <li><i class="typicons-music"></i><div class="nav-texto">Musica</div></li>
+    <li><i class="typicons-mail"></i><div class="nav-texto">Contato</div></li>
+  </ul>
+</nav>
+</body>
+</html>
