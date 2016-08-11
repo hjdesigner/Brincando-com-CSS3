@@ -14,3 +14,4 @@ Lista:
 * Text Filter Background Pure CSS
 * BMO - Adventure Time Pure CSS
 * Vertical CSS Menu
+* CSS-Only Olympic Rings - Animated
