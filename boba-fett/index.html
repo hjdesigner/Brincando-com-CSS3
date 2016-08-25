@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<title>Boba Fett Pure CSS</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #304d53;
+		}
+		.boba-fett{
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			left: calc(50% - 250px);
+			top: calc(50% - 250px);
+		}
+		.cabeca-cima{
+			width: 450px;
+			height: 164px;
+			float: left;
+			margin-left: 25px;
+			background-color: #4f6a57;
+			border-radius: 300px 300px 0 0 / 220px 220px 0 0;
+		}
+		.fundo-rosto{
+			width: 451px;
+		    height: 350px;
+		    float: left;
+		    position: relative;
+		    margin-left: 24px;
+		    background-color: #000000;
+		    /*transform: perspective(281px) rotateY(-18deg);*/
+		}
+		.fundo-rosto:before{
+			content: "";
+			width: 50px;
+			height: 350px;
+			position: absolute;
+			left: -9px;
+    		top: 1px;
+			background-color: #000000;
+			transform: rotate(3deg);			
+		}
+		.fundo-rosto:after{
+			content: "";
+			width: 50px;
+			height: 350px;
+			position: absolute;
+			right: -9px;
+    		top: 1px;
+			background-color: #000000;
+			transform: rotate(-3deg);			
+		}
+		.fundo-rosto-baixo-esq{
+			width: 320px;
+		    height: 50px;
+		    position: absolute;
+		    left: -117px;
+		    top: 307px;
+		    background-color: #000;
+		    transform: perspective(301px) rotateY(-58deg);
+		}
+		.fundo-rosto-baixo-dir{
+			width: 320px;
+		    height: 50px;
+		    position: absolute;
+		    right: -117px;
+		    top: 307px;
+		    background-color: #000;
+		    transform: perspective(301px) rotateY(58deg);
+		}
+		.fundo-olho{
+			width: 400px;
+			height: 150px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: #823c3e;
+		}
+	</style>
+</head>
+<body>
+	<div class="boba-fett">
+
+		<div class="cabeca-cima"></div>
+			<div class="fundo-rosto">
+				<div class="fundo-olho"></div>
+				<div class="fundo-rosto-baixo-esq"></div>
+				<div class="fundo-rosto-baixo-dir"></div>
+			</div>
+
+	</div>
+</body>
+</html>
