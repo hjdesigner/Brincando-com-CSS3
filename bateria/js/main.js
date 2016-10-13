@@ -98,7 +98,7 @@ $(document).ready(function(){
 				surdo.playclip()
 			}
 			//TOCANDO O AUDIO DO CHIMBAL QUANDO APERTA A TECLA ,
-			if( preciona == ',' ){
+			if( preciona == ',' || preciona == 'x'){
 				chimbal.playclip()
 			}
 			//TOCANDO O AUDIO DA CONDUÇÃO QUANDO APERTA A TECLA N
@@ -134,6 +134,12 @@ $(document).ready(function(){
 			}
 			//EFEITO CHIMBAL QUANDO APERTA A TECLA
 			if (ev.type == 'keydown' && clickEfeito == 188) {
+				$('.pratos-chimbal').addClass('active');
+			}
+			else if (ev.type == 'keyup') {
+				$('.pratos-chimbal').removeClass('active');
+			}
+			if (ev.type == 'keydown' && clickEfeito == 88) {
 				$('.pratos-chimbal').addClass('active');
 			}
 			else if (ev.type == 'keyup') {
