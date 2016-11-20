@@ -1,9 +1,15 @@
 # Brincando-com-CSS3
-Experimentos com CSS3
+Experimentos com CSS3 <3
+
+[http://codepen.io/hjdesigner/](Link para o paraíso do CSS <3)
 
 Lista:
 
+* Breakfast Pure CSS
+* CSS-Only Olympic Rings - Animated
+* Flat Tie Fighters at Sunset Pure CSS
 * Pure CSS3 Nibbler Futurama
+* Effect Animation Hover Pure CSS  
 * Girando palavras com animações CSS3
 * Columns com CSS3
 * Criando formas somente com CSS
@@ -14,6 +20,5 @@ Lista:
 * Text Filter Background Pure CSS
 * BMO - Adventure Time Pure CSS
 * Vertical CSS Menu
-* Effect Animation Hover Pure CSS  
-* CSS-Only Olympic Rings - Animated
-* Flat Tie Fighters at Sunset Pure CSS
+
+Feito com muito amor!!!
