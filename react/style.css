@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+body{
+  background-color: #000;
+  height: 100%;
+	min-height: 100%;	 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.react-logo{
+  width: 500px;
+  height: 160px;
+  position: relative;
+  border: 25px solid #00d8ff;
+  border-radius: 50%;
+}
+.react-logo:before{
+  content: "";
+  width: 500px;
+  height: 160px;
+  position: absolute;
+  border: 25px solid #00d8ff;
+  border-radius: 50%;
+  transform: rotate(125deg);
+  top: -25px;
+  left: -18px;  
+}
+.react-logo:after{
+  content: "";
+  width: 500px;
+  height: 160px;
+  position: absolute;
+  border: 25px solid #00d8ff;
+  border-radius: 50%;
+  transform: rotate(-125deg);
+  top: -25px;
+  left: -18px;    
+}
+.reactive{
+  width: 100px;
+  height: 100px;
+  float: left;
+  background-color: #00d8ff;
+  border-radius: 50%;
+  margin-left: calc(50% - 50px);
+  margin-top: 30px;
+}

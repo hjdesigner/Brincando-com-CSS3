@@ -6,6 +6,7 @@ Experimentos com CSS3 <3
 Lista:
 
 * Breakfast Pure CSS
+* Logo React
 * CSS-Only Olympic Rings - Animated
 * Flat Tie Fighters at Sunset Pure CSS
 * Pure CSS3 Nibbler Futurama
