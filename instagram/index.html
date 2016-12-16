@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Instagram Pure CSS</title>
+	<title>Filter Instagram Pure CSS</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="script.js"></script>
 </head>
 <body>
 
@@ -23,16 +25,45 @@
 				<div class="next">Next</div>
 			</div>
 			<div class="screen-photograph">
+				<input type="radio" name="radio-photograph" id="nofilter">
+				<input type="radio" name="radio-photograph" id="Clarendon">
+				<input type="radio" name="radio-photograph" id="Gingham">
+				<input type="radio" name="radio-photograph" id="Toaster">
+				<input type="radio" name="radio-photograph" id="Moon">
+				<input type="radio" name="radio-photograph" id="Lark">
+				<input type="radio" name="radio-photograph" id="n1977">
+				<input type="radio" name="radio-photograph" id="aden">
+				<input type="radio" name="radio-photograph" id="Brannan">
+				<input type="radio" name="radio-photograph" id="Brooklyn">
+				<input type="radio" name="radio-photograph" id="Nashville">
+				<input type="radio" name="radio-photograph" id="X-pro">
+				<div class="filter-photograph"></div>
 				<img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt="">
+				<div class="url-image">
+					<fieldset>
+						<input type="text" id="url-image" placeholder="Digite a url da imagem">
+						<input type="submit" value="Enviar" id="enviar">
+					</fieldset>	
+				</div>
 			</div>
 			<div class="filters">
 				<ul>
-					<li><label for="nofilter"><img src="https://una.im/CSSgram/img/atx.jpg" alt=""></label></li>
-					<li><label for="n1977"><img src="https://una.im/CSSgram/img/atx.jpg" alt=""></label></li>
-					<li><label for="aden"><img src="https://una.im/CSSgram/img/atx.jpg" alt=""></label></li>
-					<li><label for="aden"><img src="https://una.im/CSSgram/img/atx.jpg" alt=""></label></li>
-					<li><label for="aden"><img src="https://una.im/CSSgram/img/atx.jpg" alt=""></label></li>
+					<li><label for="nofilter"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="Clarendon"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="Gingham"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="Toaster"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="Moon"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="n1977"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="Nashville"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="aden"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="Brannan"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="Brooklyn"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
+					<li><label for="X-pro"><img src="https://pbs.twimg.com/media/CXPTmbJWsAEQAyM.jpg" alt=""></label></li>
 				</ul>
+			</div>
+			<div class="btns">
+				<div class="btn">Filter</div>
+				<div class="btn">Edit</div>
 			</div>
 		</div>
 		<div class="iphone-footer">

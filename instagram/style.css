@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+input[name="radio-photograph"]{
+    display: none;
+}
 body{
 	background-color: #FFF;
 }
 .iphone{
 	width: 260px;
-    height: 508px;
+    height: 529px;
     position: absolute;
-    top: calc(50% - 254px);
+    top: calc(50% - 264px);
     left: calc(50% - 130px);
     box-sizing: border-box;
     border-radius: 35px;
@@ -49,7 +52,7 @@ body{
 }
 .iphone-screen{
 	width: 230px;
-    height: 388px;
+    height: 409px;
     float: left;
     background-color: #FFF;
     margin-left: 11px;
@@ -232,16 +235,78 @@ body{
     width: 100%;
     height: 245px;
     float: left;
+    position: relative;
+}
+.filter-photograph{
+    width: 100%;
+    height: 245px;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#n1977:checked ~ .filter-photograph{
+    background-color: rgba(161,44,199,.31);
+    mix-blend-mode: lighten;
+}
+#Aden:checked ~ .filter-photograph{
+    background: -webkit-linear-gradient(left,rgba(66,10,14,.2),transparent);
+    background: linear-gradient(to right,rgba(66,10,14,.2),transparent);
+    mix-blend-mode: darken;
+}
+#Brannan:checked ~ .filter-photograph{
+    background-color: rgba(161,44,199,.31);
+    mix-blend-mode: lighten;
+}
+#Brooklyn:checked ~ .filter-photograph{
+    background: -webkit-radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);
+    background: radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);
+    mix-blend-mode: overlay;
+}
+#Clarendon:checked ~ .filter-photograph{
+    background: rgba(127,187,227,.2);
+    mix-blend-mode: overlay;
+}
+#Gingham:checked ~ .filter-photograph{
+    background: #FFF;
+    mix-blend-mode: soft-light;
+}
+#Moon:checked ~ .filter-photograph{
+    background-color: #000;
+    mix-blend-mode: hue;
+}
+#Moon:checked ~ .filter-photograph{
+    background-color: #000;
+    mix-blend-mode: hue;
+}
+#Lark:checked ~ .filter-photograph{
+    background-color: #000;
+    mix-blend-mode: hue;
+}
+#Nashville:checked ~ .filter-photograph{
+    background: rgba(0,70,150,.4);
+    mix-blend-mode: lighten;
+}
+#Toaster:checked ~ .filter-photograph{
+    background: -webkit-radial-gradient(circle,#804e0f,#3b003b);
+    background: radial-gradient(circle,#804e0f,#3b003b);
+    mix-blend-mode: screen;
+}
+#X-pro:checked ~ .filter-photograph{
+    background: -webkit-radial-gradient(circle,#e6e7e0 40%,rgba(43,42,161,.6) 110%);
+    background: radial-gradient(circle,#e6e7e0 40%,rgba(43,42,161,.6) 110%);
+    mix-blend-mode: color-burn;
 }
 .screen-photograph img {
     width: 100%;
     max-height: 245px;
+    display: none;
 }
 .filters{
 	width: 100%;
     height: auto;
     float: left;
-    margin-top: 5px;
+    margin-top: 11px;
     overflow-x: scroll;
 }
 .filters::-webkit-scrollbar {
@@ -297,7 +362,7 @@ body{
     border-radius: 5px;
 }
 .filters ul{
-	width: 1000px;
+	width: 721px;
 	height: auto;
 	float: left;
 	list-style: none;
@@ -313,17 +378,78 @@ body{
     height: auto;
     float: left;
     cursor: pointer;
+    position: relative;
 }
 .filters label:before{
-	content: attr(for);
-	width: 100%;
-	height: auto;
-	float: left;
-	font-family: 'Open Sans', sans-serif;
-	font-size: .8em;
+    content: attr(for);
+    width: 100%;
+    height: auto;
+    float: left;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7em;
     color: #000;
     font-weight: 600;
     text-align: center;
+}
+.filters label:after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 12px;
+    left: 0;
+}
+.filters label[for="1977"]:after{
+    background-color: rgba(161,44,199,.31);
+    mix-blend-mode: lighten;
+}
+.filters label[for="Aden"]:after{
+    background: -webkit-linear-gradient(left,rgba(66,10,14,.2),transparent);
+    background: linear-gradient(to right,rgba(66,10,14,.2),transparent);
+    mix-blend-mode: darken;
+}
+.filters label[for="Brannan"]:after{
+    background-color: rgba(161,44,199,.31);
+    mix-blend-mode: lighten;
+}
+.filters label[for="Brooklyn"]:after{
+    background: -webkit-radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);
+    background: radial-gradient(circle,rgba(168,223,193,.4) 70%,#c4b7c8);
+    mix-blend-mode: overlay;
+}
+.filters label[for="Clarendon"]:after{
+    background: rgba(127,187,227,.2);
+    mix-blend-mode: overlay;
+}
+.filters label[for="Gingham"]:after{
+    background: #FFF;
+    mix-blend-mode: soft-light;
+}
+.filters label[for="Moon"]:after{
+    background-color: #000;
+    mix-blend-mode: hue;
+}
+.filters label[for="Moon"]:after{
+    background-color: #000;
+    mix-blend-mode: hue;
+}
+.filters label[for="Lark"]:after{
+    background-color: #000;
+    mix-blend-mode: hue;
+}
+.filters label[for="Nashville"]:after{
+    background: rgba(0,70,150,.4);
+    mix-blend-mode: lighten;
+}
+.filters label[for="Toaster"]:after{
+    background: -webkit-radial-gradient(circle,#804e0f,#3b003b);
+    background: radial-gradient(circle,#804e0f,#3b003b);
+    mix-blend-mode: screen;
+}
+.filters label[for="X-pro"]:after{
+    background: -webkit-radial-gradient(circle,#e6e7e0 40%,rgba(43,42,161,.6) 110%);
+    background: radial-gradient(circle,#e6e7e0 40%,rgba(43,42,161,.6) 110%);
+    mix-blend-mode: color-burn;
 }
 .filters li img{
 	width: 60px;
@@ -334,7 +460,7 @@ body{
 	width: 100%;
     height: auto;
     float: left;
-    margin-top: 6px;
+    margin-top: 11px;
 }
 .btn{
 	width: 50%;
@@ -346,4 +472,50 @@ body{
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+}
+.url-image{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 47px);
+}
+.url-image fieldset{
+    width: 100%;
+    height: auto;
+    float: left;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.url-image fieldset input{
+    width: 100%;
+    height: 40px;
+    float: left;
+    border: 0px;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #348cda;
+    font-weight: 700;
+    text-align: center;
+    outline: 1px solid transparent;
+}
+.url-image fieldset input[type="submit"]{
+    width: 100%;
+    height: 40px;
+    float: left;
+    margin-top: 10px;
+    border: 0;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: #FFF;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .25s ease-in-out;
+}
+.url-image fieldset input[type="submit"]:hover{
+    background-color: #348cda;
 }
