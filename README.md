@@ -23,5 +23,6 @@ Lista:
 * Vertical CSS Menu
 * Filter Instagram Pure CSS
 * Luke Skywalker Pixel Art
+* Pure CSS Happy Holidays!
 
 Feito com muito amor!!!
