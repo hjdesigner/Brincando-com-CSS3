@@ -5,6 +5,7 @@ Experimentos com CSS3 <3
 
 Lista:
 
+* Panda cub pure css #dailycssimages - Day 01
 * Breakfast Pure CSS
 * Logo React
 * CSS-Only Olympic Rings - Animated
