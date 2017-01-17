@@ -1,0 +1,221 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+    background-color: #2a3342;
+    overflow: hidden;
+}
+.head-1{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 237px;
+    right: 150px;
+    border-right: 200px solid #f9a33c;
+    border-top: 60px solid transparent;
+    border-bottom: 100px solid transparent;
+    transform: rotate(-30deg);
+}
+.head-2{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 231px;
+    right: 142px;
+    border-right: 84px solid #e7952f;
+    border-top: 59px solid transparent;
+    border-bottom: 39px solid transparent;
+    transform: rotate(32deg);
+}
+.head-3{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 237px;
+    right: 164px;
+    border-right: 234px solid #e7952f;
+    border-top: 54px solid transparent;
+    border-bottom: 27px solid transparent;
+    transform: rotate(10deg);
+}
+.head-4{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 340px;
+    right: 195px;
+    border-right: 184px solid #f9a33c;
+    border-top: 54px solid transparent;
+    border-bottom: 27px solid transparent;
+    transform: rotate(-56deg);
+}
+.head-5{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 339px;
+    right: 269px;
+    border-top: 140px solid #f9a33c;
+    border-left: 34px solid transparent;
+    border-right: 12px solid transparent;
+    transform: rotate(0deg);
+}
+.head-6{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 322px;
+    right: 261px;
+    border-top: 140px solid #f9a33c;
+    border-left: 80px solid transparent;
+    border-right: 24px solid transparent;
+    transform: rotate(-38deg);
+}
+.head-7{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 282px;
+    right: 261px;
+    border-top: 140px solid #f9a33c;
+    border-left: 88px solid transparent;
+    border-right: 42px solid transparent;
+    transform: rotate(-91deg);
+}
+.head-8{
+    width: 84px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    bottom: 332px;
+    right: 367px;
+    background-color: #f4b05b;
+    transform: rotate(-50deg);
+}
+.head-8:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 3;
+    bottom: -10px;
+    right: -9px;
+    border-right: 50px solid #f4b05b;
+    border-top: 21px solid transparent;
+    border-bottom: 24px solid transparent;
+    transform: rotate(-15deg);
+}
+.head-9{
+    width: 82px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    bottom: 264px;
+    right: 361px;
+    background-color: #f3f3f3;
+    transform: rotate(60deg);
+}
+.head-10{
+    width: 62px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    bottom: 234px;
+    right: 361px;
+    background-color: #f3f3f3;
+    transform: rotate(71deg);
+}
+.head-10{
+    width: 62px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    bottom: 234px;
+    right: 361px;
+    background-color: #f3f3f3;
+    transform: rotate(71deg);
+}
+.head-11{
+    width: 182px;
+    height: 60px;
+    position: absolute;
+    z-index: 2;
+    bottom: 249px;
+    right: 211px;
+    background-color: #f3f3f3;
+    transform: rotate(-16deg);
+}
+.head-12{
+    width: 102px;
+    height: 60px;
+    position: absolute;
+    z-index: 1;
+    bottom: 283px;
+    right: 326px;
+    background-color: #ee9831;
+    transform: rotate(-49deg);
+}
+.head-12:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 3;
+    bottom: -22px;
+    right: -24px;
+    border-right: 60px solid #ee9831;
+    border-top: 31px solid transparent;
+    border-bottom: 44px solid transparent;
+    transform: rotate(-15deg);
+}
+.head-12:before{
+    content: "";
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    z-index: 3;
+    bottom: 40px;
+    right: -14px;
+    background-color: #ee9831;
+}
+.nose{
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 3;
+    bottom: 295px;
+    right: 400px;
+    border-left: 44px solid #680000;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    transform: rotate(-27deg);
+}
+.neck{
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 210px;
+    right: -70px;
+    border-left: 299px solid #da8c2a;
+    border-top: 160px solid transparent;
+    border-bottom: 160px solid transparent;
+    transform: rotate(-17deg);
+}
+.body{
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom: 350px solid #f9a33c;
+    border-left: 350px solid transparent;
+}
