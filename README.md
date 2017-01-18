@@ -5,7 +5,6 @@ Experimentos com CSS3 <3
 
 Lista:
 
-* Panda cub pure css #dailycssimages - Day 01
 * Breakfast Pure CSS
 * Logo React
 * CSS-Only Olympic Rings - Animated
@@ -25,5 +24,13 @@ Lista:
 * Filter Instagram Pure CSS
 * Luke Skywalker Pixel Art
 * Pure CSS Happy Holidays!
+
+# Desafio Daily CSS images
+
+* Panda cub pure css #dailycssimages - Day 01
+* Elephant pure css #dailycssimages - Day 02
+* Beaver pure css #dailycssimages - Day 03
+* Tiger pure css #dailycssimages - Day 04
+
 
 Feito com muito amor!!!
