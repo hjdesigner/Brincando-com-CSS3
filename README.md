@@ -31,6 +31,7 @@ Lista:
 * Elephant pure css #dailycssimages - Day 02
 * Beaver pure css #dailycssimages - Day 03
 * Tiger pure css #dailycssimages - Day 04
-
+* Dory pure css #dailycssimages - Day 05
+* Clock pure css #dailycssimages - Day 06
 
 Feito com muito amor!!!
