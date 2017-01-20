@@ -33,5 +33,6 @@ Lista:
 * Tiger pure css #dailycssimages - Day 04
 * Dory pure css #dailycssimages - Day 05
 * Clock pure css #dailycssimages - Day 06
+* Ruler pure css #dailycssimages - Day 07
 
 Feito com muito amor!!!
