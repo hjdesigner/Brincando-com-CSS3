@@ -27,6 +27,8 @@ Lista:
 
 # Desafio Daily CSS images
 
+Confira todos os desenhos no menu [site](http://henriquemelanda.com.br/galeria-daily-css-images/)
+
 * Panda cub pure css #dailycssimages - Day 01
 * Elephant pure css #dailycssimages - Day 02
 * Beaver pure css #dailycssimages - Day 03
@@ -35,5 +37,7 @@ Lista:
 * Clock pure css #dailycssimages - Day 06
 * Ruler pure css #dailycssimages - Day 07
 * Notepad pure css #dailycssimages - Day 08
+* Calendar pure css #dailycssimages - Day 09
+* Pencil Jar Minion pure css #dailycssimages - Day 10
 
 Feito com muito amor!!!
