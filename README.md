@@ -39,5 +39,7 @@ Confira todos os desenhos no menu [site](http://henriquemelanda.com.br/galeria-d
 * Notepad pure css #dailycssimages - Day 08
 * Calendar pure css #dailycssimages - Day 09
 * Pencil Jar Minion pure css #dailycssimages - Day 10
+* Pizza - Day 11 #dailycssimages
+* Hamburger - Day 12 #dailycssimages
 
 Feito com muito amor!!!
