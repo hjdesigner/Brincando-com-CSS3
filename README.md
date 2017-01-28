@@ -41,5 +41,6 @@ Confira todos os desenhos no menu [site](http://henriquemelanda.com.br/galeria-d
 * Pencil Jar Minion pure css #dailycssimages - Day 10
 * Pizza - Day 11 #dailycssimages
 * Hamburger - Day 12 #dailycssimages
+* Taco - Day 13 #dailycssimages
 
 Feito com muito amor!!!
