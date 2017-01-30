@@ -42,5 +42,6 @@ Confira todos os desenhos no menu [site](http://henriquemelanda.com.br/galeria-d
 * Pizza - Day 11 #dailycssimages
 * Hamburger - Day 12 #dailycssimages
 * Taco - Day 13 #dailycssimages
+* Cheesecake - Day 14 #dailycssimages
 
 Feito com muito amor!!!
