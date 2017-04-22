@@ -26,3 +26,4 @@ Lista:
 * Pure CSS Happy Holidays!
 * Bolacha Pure CSS
 * Nubank Pure css
+* Payment Card Pure CSS

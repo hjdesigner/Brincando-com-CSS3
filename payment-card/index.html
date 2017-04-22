@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Card Pure CSS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<input type="radio" name="radioCards" id="cardFront" checked>
+    <input type="radio" name="radioCards" id="cardBack">
+		<div class="cards">
+			<div class="card-front">
+				<div class="chip"></div>
+				<input type="text" class="number-card number-card-1" maxlength="4" placeholder="1234">
+				<input type="text" class="number-card number-card-2" maxlength="4" placeholder="5678">
+				<input type="text" class="number-card number-card-3" maxlength="4" placeholder="9101">
+				<input type="text" class="number-card number-card-4" maxlength="4" placeholder="1213">
+				<div class="date-text">Valid Thru</div>
+				<div class="date-separation"></div>
+				<input type="text" class="number-date number-date-1" maxlength="2" placeholder="12">
+				<input type="text" class="number-date number-date-2" maxlength="2" placeholder="90">
+				<input type="text" class="name-card" maxlength="18" placeholder="Henrique S Melanda">
+				<div class="flag"></div>
+			</div>
+			<div class="card-back">
+				<div class="stripe"></div>
+				<div class="strip-cvv"></div>
+				<input type="text" class="cvv-card" maxlength="3" placeholder="127">
+			</div>
+		</div>		
+		<label for="cardBack">Verso</label>
+		<label for="cardFront">Frente</label>
+	</div>
+
+</body>
+</html>
