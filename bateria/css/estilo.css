@@ -5,20 +5,6 @@
 body{
 	background-color: #a2c43a;
 }
-@-webkit-keyframes efeito{
-    0%{	  
-    	-webkit-transform: scale(.9);
-    	-moz-transform: scale(.9);
-    	-o-transform: scale(.9);
-    	transform: scale(.9);
-    }
-    100%{
-    	-webkit-transform: scale(1);
-    	-moz-transform: scale(1);
-    	-o-transform: scale(1);
-    	transform: scale(1);
-    }
-}
 .master{
 	width: 600px;
 	height: 400px;
@@ -614,24 +600,4 @@ body{
 }
 .instrucoes strong{
 	text-transform: uppercase;
-}
-.bumbo:active:after,
-.bumbo.active:after,
-.caixa:active,
-.caixa.active,
-.tom-1:active,
-.tom-1.active,
-.tom-2:active,
-.tom-2.active,
-.surdo:active,
-.surdo.active,
-.prato-conducao:active,
-.prato-conducao.active,
-.pratos-chimbal:active,
-.pratos-chimbal.active
-{
-	-webkit-animation: efeito .25s linear;
-	-moz-animation: efeito .25s linear;
-	-o-animation: efeito .25s linear;
-	animation: efeito .25s linear;
 }

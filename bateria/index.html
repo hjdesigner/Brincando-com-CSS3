@@ -2,15 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bateria pure CSS com uma pintada de Jquery</title>
+	<title>Bateria pure CSS + JS</title>
 	<link rel="stylesheet" href="css/estilo.css">
 	
 </head>
 <body>
 	<div class="instrucoes">
 		<h2>Instruções</h2>
-
-		<p>Clique em uma peça ou use as teclas:</p>
 
 		<p><strong>- Bumbo</strong> Teclas: M ou B</p>
 		<p><strong>- Caixa</strong> Teclas: Z ou ></p>
@@ -22,7 +20,7 @@
 	</div>
 	<div class="master">
 		<!--INICIO BUMBOM-->
-		<div class="bumbo">
+		<div class="bumbo key" data-key="77">
 			<div class="ferragem-bumbo"></div>
 			<div class="ferragem-bumbo2"></div>
 			<div class="ferragem-bumbo3"></div>
@@ -33,21 +31,22 @@
 				
 				<!--INICIO TOM-->
 				<div class="ferragem-tom"></div>
-				<div class="tom-1">
-					<div class="detalhe-tom1 detalhe-cor-1"></div>
-					<div class="detalhe-tom1 detalhe-cor-2"></div>
+				<div class="tom-1 key" data-key="76">
+					<div class="detalhe-tom1 detalhe-cor-1 key" data-key="76"></div>
+					<div class="detalhe-tom1 detalhe-cor-2 key" data-key="76"></div>
 				</div>
-				<div class="tom-2">
-					<div class="detalhe-tom2 detalhe-cor-1"></div>
-					<div class="detalhe-tom2 detalhe-cor-2"></div>
+				<div class="tom-2 key" data-key="75">
+					<div class="detalhe-tom2 detalhe-cor-1 key" data-key="75"></div>
+					<div class="detalhe-tom2 detalhe-cor-2 key" data-key="75"></div>
 				</div>
 				<!--FIM TOM-->
 					
 					<!--INICIO SURDO-->
-					<div class="surdo">
-						<div class="detalhe-surdo detalhe-surdo-cor1"></div>
-						<div class="detalhe-surdo detalhe-surdo-cor2"></div>
-						<div class="detalhe-surdo detalhe-surdo-cor3"></div>
+					
+					<div class="surdo key" data-key="74">
+						<div class="detalhe-surdo detalhe-surdo-cor1 key" data-key="74"></div>
+						<div class="detalhe-surdo detalhe-surdo-cor2 key" data-key="74"></div>
+						<div class="detalhe-surdo detalhe-surdo-cor3 key" data-key="74"></div>
 						<div class="pe-surdo"></div>
 						<div class="pe-surdo-dir"></div>
 					</div>
@@ -57,13 +56,13 @@
 						<div class="ferragem-conducao">
 							<div class="parafuso-conducao"></div>
 						</div>
-						<div class="prato-conducao"></div>
+						<div class="prato-conducao key" data-key="78"></div>
 						<!--FIM CONDUÇÃO-->
 
 							<!--INICIO CAIXA-->
-							<div class="caixa">
-								<div class="detalhe-caixa detalhe-caixa-cor1"></div>
-								<div class="detalhe-caixa detalhe-caixa-cor2"></div>
+							<div class="caixa key" data-key="190">
+								<div class="detalhe-caixa detalhe-caixa-cor1 key" data-key="190"></div>
+								<div class="detalhe-caixa detalhe-caixa-cor2 key" data-key="190"></div>
 									<div class="ferragem-caixa">
 										<div class="ferragem-caixa-cima"></div>
 									</div>
@@ -74,14 +73,27 @@
 								<div class="ferragem-chimbal">
 									<div class="parafuso-chimbal"></div>
 								</div>
-									<div class="pratos-chimbal">
-										<div class="prato-cima-chimbal"></div>
-										<div class="prato-baixo-chimbal"></div>										
+									<div class="pratos-chimbal key" data-key="188">
+										<div class="prato-cima-chimbal key" data-key="188"></div>
+										<div class="prato-baixo-chimbal key" data-key="188"></div>										
 									</div>
 								<!--FIM CHIMBAL-->
 	</div>
 
-	<script src="js/jquery.js"></script>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3" data-key="77"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/bumbo.mp3" data-key="66"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/chimbal.mp3" data-key="188"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/chimbal.mp3" data-key="88"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/caixa.mp3" data-key="190"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/caixa.mp3" data-key="90"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/tom1.mp3" data-key="76"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/tom1.mp3" data-key="83"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/tom2.mp3" data-key="75"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/tom2.mp3" data-key="68"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/surdo.mp3" data-key="74"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/surdo.mp3" data-key="70"></audio>
+	<audio src="http://www.henriquemelanda.com.br/assests/midia/conducao.mp3" data-key="78"></audio>
+
 	<script src="js/main.js"></script>
 	
 </body>
