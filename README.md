@@ -5,6 +5,7 @@ Experimentos com CSS3 <3
 
 Lista:
 
+* Astronauta
 * Breakfast Pure CSS
 * Logo React
 * CSS-Only Olympic Rings - Animated
