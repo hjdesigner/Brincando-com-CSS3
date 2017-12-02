@@ -5,6 +5,7 @@ Experimentos com CSS3 <3
 
 Lista:
 
+* Simple Pie Chart
 * Astronauta
 * Breakfast Pure CSS
 * Logo React

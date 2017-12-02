@@ -1,0 +1,87 @@
+body{
+  font-family: Arial;
+  font-size: 100%;
+}
+.container{
+  width: 760px;
+  margin: 0 auto;
+}
+.block-1,
+.block-2{
+  width: 100%;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+
+.pie{
+  width: 150px; 
+  height: 150px;
+  float: left;
+  margin-right: 5%;
+  border-radius: 50%;
+  background: rgba(133, 179, 169, 1);
+  background-image: linear-gradient(to right, transparent 50%, rgba(7,61,68, 1) 0);
+  overflow: hidden;
+  border: 5px solid rgba(66, 116, 113, 1);
+  position: relative;
+}
+.pie:last-child{
+  margin-right: 0;
+}
+.pie:after{
+  content: attr(data-value);
+  color: rgba(255,255,255,1);
+  font-size: 1em;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-shadow: 1px 1px 6px rgba(0,0,0,1)
+}
+.pie:before{
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  transform-origin: left;
+}
+
+/*Here we configure if the graph goes up to 50% or 100%*/
+.upTo50:before{
+  background-color: inherit;
+}
+.upTo100:before{
+  background-color: rgba(7,61,68, 1);
+}
+
+/*
+PLACING THE SLICE ON THE CHART
+
+50%
+ - 10% .1turn
+ - 20% .2turn
+ - 40% .4turn
+ - 50% .5turn
+
+100%
+ - 60% .1turn
+ - 70% .2turn
+ - 80% .4turn
+ - 90% .45turn
+*/
+.pie.pie1:before{
+  transform: rotate(.1turn);
+}
+.pie.pie2:before{
+  transform: rotate(.2turn);
+}
+.pie.pie3:before{
+  transform: rotate(.4turn);
+}
+.pie.pie4:before{
+  transform: rotate(.45turn);
+}
