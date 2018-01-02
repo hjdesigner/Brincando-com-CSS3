@@ -1,7 +1,7 @@
 # Brincando-com-CSS3
 Experimentos com CSS3 <3
 
-[http://codepen.io/hjdesigner/](Link para o paraíso do CSS <3)
+[Link para o paraíso do CSS <3](http://codepen.io/hjdesigner/)
 
 Lista:
 
